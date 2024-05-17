@@ -1,5 +1,5 @@
 plugins {
-  id "fabric-loom" version "1.2-SNAPSHOT" apply false
+  id "fabric-loom" version "1.6.+" apply false
   id "maven-publish"
 }
 
@@ -17,7 +17,7 @@ allprojects {
 
   tasks.withType(JavaCompile).configureEach {
     it.options.encoding = "UTF-8"
-    it.options.release = 17
+    it.options.release = 21
   }
 
   dependencies {
